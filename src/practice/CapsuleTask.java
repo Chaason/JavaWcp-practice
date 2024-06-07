@@ -12,15 +12,15 @@ public class CapsuleTask {
 	}
 	
 	public String getContent() {
-		return content;
+		return this.content;
 	}
 	
 	public int getDate() {
-		return date;
+		return this.date;
 	}
 	
 	public String getStatus() {
-		return status;
+		return this.status;
 	}
 	
 	public void setStatus(String status) {
