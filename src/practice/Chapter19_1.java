@@ -9,18 +9,19 @@ public class Chapter19_1 {
 		// TODO 自動生成されたメソッド・スタブ
 		FileWriter fw = null;
 		try {
-			fw = new FileWriter("E:\\pleiades\\2024-03\\workspace\\test.txt", true);
-			fw.write("あいうえお");
+			fw = new FileWriter("E:\\pleiades\\2024-03\\workspace\\test.txt", false);
+			fw.write("あいうえか");
+			fw.flush();
 		} catch (IOException e) {
 			System.out.println("エラーです");
 		} finally {
 			if (fw != null) {
 				try {
 					fw.close();
-				} catch (IOException e) {
+				} catch (IOException e) { 
 					e.printStackTrace();
 				}
-			}
+			} 
 		}
 	}
 
