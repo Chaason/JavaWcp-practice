@@ -14,7 +14,6 @@ public class Main {
 		appleBasket.printTotalPrice();
 		peachBasket.printTotalPrice();
 		
-		
 		Set<Integer> set = new LinkedHashSet<>();
 		set.add(1);
 		//set.add("Two");
