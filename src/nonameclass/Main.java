@@ -41,9 +41,10 @@ public class Main {
 		// 並び替え対象のリスト
 		List<Integer> numbers = Arrays.asList(1, -8, 4, 2);
 
-		Collections.sort(
-		    numbers,
-		    new Comparator<Integer>() {
+		Collections.sort(  
+		//Collections.sortは第1引数のリストを第2引数で定義している通りに並び替える
+		    numbers,  //第1引数
+		    new Comparator<Integer>() {  //第2引数に無名クラスを使ってソートルールを定義
 		      @Override
 		      public int compare(Integer x, Integer y) {
 		        // 数値が小さい順に並べる
